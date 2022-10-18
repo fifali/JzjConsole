@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SetPrescriptionInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPrescriptionInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetPrescriptionInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAuditStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAuditStateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssocioter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssocioterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAssocioterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIntrgral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIntrgralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIntrgralResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChangeIntrgralDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChangeIntrgralDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChangeIntrgralDetailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YzToJzjSetChangeIntrgral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YzToJzjSetChangeIntrgralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="YzToJzjSetChangeIntrgralResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YzToJzjUpdateAssocioter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YzToJzjUpdateAssocioterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="YzToJzjUpdateAssocioterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YzToJzjSetVoucherState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YzToJzjSetVoucherStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="YzToJzjSetVoucherStateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPrescriptionLabel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPrescriptionLabelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPrescriptionLabelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SetPrescriptionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPrescriptionInfo" />
+  </wsdl:message>
+  <wsdl:message name="SetPrescriptionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPrescriptionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditStateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAuditState" />
+  </wsdl:message>
+  <wsdl:message name="GetAuditStateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAuditStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAssocioterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAssocioter" />
+  </wsdl:message>
+  <wsdl:message name="GetAssocioterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAssocioterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIntrgralSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIntrgral" />
+  </wsdl:message>
+  <wsdl:message name="GetIntrgralSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIntrgralResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChangeIntrgralDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChangeIntrgralDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetChangeIntrgralDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChangeIntrgralDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="YzToJzjSetChangeIntrgralSoapIn">
+    <wsdl:part name="parameters" element="tns:YzToJzjSetChangeIntrgral" />
+  </wsdl:message>
+  <wsdl:message name="YzToJzjSetChangeIntrgralSoapOut">
+    <wsdl:part name="parameters" element="tns:YzToJzjSetChangeIntrgralResponse" />
+  </wsdl:message>
+  <wsdl:message name="YzToJzjUpdateAssocioterSoapIn">
+    <wsdl:part name="parameters" element="tns:YzToJzjUpdateAssocioter" />
+  </wsdl:message>
+  <wsdl:message name="YzToJzjUpdateAssocioterSoapOut">
+    <wsdl:part name="parameters" element="tns:YzToJzjUpdateAssocioterResponse" />
+  </wsdl:message>
+  <wsdl:message name="YzToJzjSetVoucherStateSoapIn">
+    <wsdl:part name="parameters" element="tns:YzToJzjSetVoucherState" />
+  </wsdl:message>
+  <wsdl:message name="YzToJzjSetVoucherStateSoapOut">
+    <wsdl:part name="parameters" element="tns:YzToJzjSetVoucherStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPrescriptionLabelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPrescriptionLabel" />
+  </wsdl:message>
+  <wsdl:message name="GetPrescriptionLabelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPrescriptionLabelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="JzJInfoSoap">
+    <wsdl:operation name="SetPrescriptionInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">处方单传至健之佳</wsdl:documentation>
+      <wsdl:input message="tns:SetPrescriptionInfoSoapIn" />
+      <wsdl:output message="tns:SetPrescriptionInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditState">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">主动查询审状态</wsdl:documentation>
+      <wsdl:input message="tns:GetAuditStateSoapIn" />
+      <wsdl:output message="tns:GetAuditStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssocioter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取会员数据</wsdl:documentation>
+      <wsdl:input message="tns:GetAssocioterSoapIn" />
+      <wsdl:output message="tns:GetAssocioterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIntrgral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">初始化积分</wsdl:documentation>
+      <wsdl:input message="tns:GetIntrgralSoapIn" />
+      <wsdl:output message="tns:GetIntrgralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeIntrgralDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取积分明细</wsdl:documentation>
+      <wsdl:input message="tns:GetChangeIntrgralDetailSoapIn" />
+      <wsdl:output message="tns:GetChangeIntrgralDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjSetChangeIntrgral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">积分变更传至健之佳</wsdl:documentation>
+      <wsdl:input message="tns:YzToJzjSetChangeIntrgralSoapIn" />
+      <wsdl:output message="tns:YzToJzjSetChangeIntrgralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjUpdateAssocioter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">用户更新</wsdl:documentation>
+      <wsdl:input message="tns:YzToJzjUpdateAssocioterSoapIn" />
+      <wsdl:output message="tns:YzToJzjUpdateAssocioterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjSetVoucherState">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">优惠券消费结果传至健之佳</wsdl:documentation>
+      <wsdl:input message="tns:YzToJzjSetVoucherStateSoapIn" />
+      <wsdl:output message="tns:YzToJzjSetVoucherStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrescriptionLabel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取处方药标识</wsdl:documentation>
+      <wsdl:input message="tns:GetPrescriptionLabelSoapIn" />
+      <wsdl:output message="tns:GetPrescriptionLabelSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="JzJInfoSoap" type="tns:JzJInfoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetPrescriptionInfo">
+      <soap:operation soapAction="http://tempuri.org/SetPrescriptionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditState">
+      <soap:operation soapAction="http://tempuri.org/GetAuditState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssocioter">
+      <soap:operation soapAction="http://tempuri.org/GetAssocioter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIntrgral">
+      <soap:operation soapAction="http://tempuri.org/GetIntrgral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeIntrgralDetail">
+      <soap:operation soapAction="http://tempuri.org/GetChangeIntrgralDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjSetChangeIntrgral">
+      <soap:operation soapAction="http://tempuri.org/YzToJzjSetChangeIntrgral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjUpdateAssocioter">
+      <soap:operation soapAction="http://tempuri.org/YzToJzjUpdateAssocioter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjSetVoucherState">
+      <soap:operation soapAction="http://tempuri.org/YzToJzjSetVoucherState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrescriptionLabel">
+      <soap:operation soapAction="http://tempuri.org/GetPrescriptionLabel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="JzJInfoSoap12" type="tns:JzJInfoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetPrescriptionInfo">
+      <soap12:operation soapAction="http://tempuri.org/SetPrescriptionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditState">
+      <soap12:operation soapAction="http://tempuri.org/GetAuditState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssocioter">
+      <soap12:operation soapAction="http://tempuri.org/GetAssocioter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIntrgral">
+      <soap12:operation soapAction="http://tempuri.org/GetIntrgral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeIntrgralDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetChangeIntrgralDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjSetChangeIntrgral">
+      <soap12:operation soapAction="http://tempuri.org/YzToJzjSetChangeIntrgral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjUpdateAssocioter">
+      <soap12:operation soapAction="http://tempuri.org/YzToJzjUpdateAssocioter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YzToJzjSetVoucherState">
+      <soap12:operation soapAction="http://tempuri.org/YzToJzjSetVoucherState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrescriptionLabel">
+      <soap12:operation soapAction="http://tempuri.org/GetPrescriptionLabel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JzJInfo">
+    <wsdl:port name="JzJInfoSoap" binding="tns:JzJInfoSoap">
+      <soap:address location="http://app2.jzj.cn:8046/up/jzjinfo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="JzJInfoSoap12" binding="tns:JzJInfoSoap12">
+      <soap12:address location="http://app2.jzj.cn:8046/up/jzjinfo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
